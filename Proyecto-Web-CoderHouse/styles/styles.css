@@ -5,6 +5,11 @@
 /* font-family: "Lato", sans-serif; */
 /* Global Styles */
 /* Colors: Narvik (#EAE7DD), Sorrell brown (#99775C)*/
+/*:root {
+    --color-primary: #D1BB91;
+    --color-secondary: #99775C;
+    --color-text: #111;
+}*/
 * {
     font-family: 'Lato', sans-serif;
     background: #D1BB91;
@@ -91,6 +96,50 @@ footer img {
     flex-direction: column;
     gap: 15px;
     max-width: 400px;
+}
+.contact-form label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-weight: 700;
+}
+label{
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 2rem;
+    border-radius: 8px;
+}
+input {
+    width: 400px;
+    height: 45px;
+    font-size: 1.8rem;
+    border-radius: 8px;
+    border: 1px solid;
+}
+textarea {
+    width: 400px;
+    height: 100px;
+    font-size: 1.8rem;
+    border-radius: 8px;
+    cursor: text;
+    color: #111;
+}
+button {
+    width: 150px;
+    height: 45px;
+    font-size: 1.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover {
+    width: 150px;
+    height: 45px;
+    font-size: 1.8rem;
+    background: #99775C;
+    color: #111;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 

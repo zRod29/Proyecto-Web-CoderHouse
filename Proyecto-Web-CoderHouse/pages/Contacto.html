@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Proyecto-Web-CoderHouse/css/styles.css">
+    <link rel="stylesheet" href="/Proyecto-Web-CoderHouse/styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Contacto</title>
   </head>
@@ -27,9 +27,9 @@
         <div class="contact-form">
           <form action="/Proyecto-Web-CoderHouse/scripts/enviar-contacto.php" method="POST">
             <label for="Nombre y Apellido">Nombre y Apellido:</label>
-            <input type="text" id="Nombre y Apellido" name="Nombre y Apellido" required>
-            <label for="Correo Electronico">Correo Electronico:</label>
-            <input type="email" id="Correo Electronico" name="Correo Electronico" required>
+            <input type="text" placeholder="Ingrese su nombre y apellido" id="Nombre y Apellido" name="Nombre y Apellido" required>
+            <label for="Correo Electronico">Correo Electrónico:</label>
+            <input type="email" placeholder="Ingrese su correo electrónico" id="Correo Electronico" name="Correo Electronico" required>
             <label for="Mensaje">Mensaje:</label>
             <textarea id="Mensaje" name="Mensaje" required></textarea>
             <button type="submit">Enviar</button>
