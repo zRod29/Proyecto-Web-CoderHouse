@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Proyecto-Web-CoderHouse/styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Contacto</title>
   </head>
@@ -24,17 +24,26 @@
     </header>
     <main>
       <section id="Contacto">
-        <div class="contact-form">
+        <!--<div class="contact-form">
           <form action="/Proyecto-Web-CoderHouse/scripts/enviar-contacto.php" method="POST">
-            <label for="Nombre y Apellido">Nombre y Apellido:</label>
-            <input type="text" placeholder="Ingrese su nombre y apellido" id="Nombre y Apellido" name="Nombre y Apellido" required>
-            <label for="Correo Electronico">Correo Electrónico:</label>
-            <input type="email" placeholder="Ingrese su correo electrónico" id="Correo Electronico" name="Correo Electronico" required>
+            <label for="nombre y apellido">Nombre y Apellido:</label>
+            <input type="text" placeholder="Ingrese su nombre y apellido" id="nombre y apellido" name="nombre y apellido" required>
+            <label for="correo electronico">Correo Electrónico:</label>
+            <input type="email" placeholder="Ingrese su correo electrónico" id="correo electronico" name="correo electronico" required>
             <label for="Mensaje">Mensaje:</label>
             <textarea id="Mensaje" name="Mensaje" required></textarea>
             <button type="submit">Enviar</button>
           </form>
-        </div>
+        </div>-->
+        <form class="contact-form" action="../scripts/enviar-contacto.php" method="POST">
+          <label for="nombre-apellido">Nombre y Apellido:</label>
+          <input type="text" placeholder="Ingrese su nombre y apellido" id="nombre-apellido" name="nombre-apellido" required>
+          <label for="correo">Correo Electrónico:</label>
+          <input type="email" placeholder="Ingrese su correo electrónico" id="correo" name="correo" required>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
       </section>
     </main>
     <footer>
