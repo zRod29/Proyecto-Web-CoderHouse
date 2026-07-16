@@ -8,33 +8,24 @@
     <title>Contacto</title>
   </head>
   <body>
-    <header>
-      <h1>Contacto</h1>
-      <picture>
-        <img src="../img/nescafe-logo.png" alt="Logo Nescafé">
-      </picture>
-      <nav>
-        <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/Proyecto-Web-CoderHouse/pages/Inicio.html">Inicio</a></li>
-          <li><a href="/Proyecto-Web-CoderHouse/pages/Proyectos.html">Proyectos</a></li>
-          <li><a href="/Proyecto-Web-CoderHouse/pages/Sobre-mi.html">Sobre Mi</a></li>
-        </ul>
-      </nav>
-    </header>
+      <header>
+        <div class="header-izquierda">          
+        <h1 class="tituloprincipal">Ezequiel Rodriguez</h1>
+          <nav>
+            <ul>
+              <li><a href="/Proyecto-Web-CoderHouse/pages/Inicio.html">Inicio</a></li>
+              <li><a href="/Proyecto-Web-CoderHouse/pages/Sobre-mi.html">Sobre mí</a></li>
+              <li><a href="/Proyecto-Web-CoderHouse/pages/Proyectos.html">Proyectos</a></li>
+              <li><a href="/index.html">Home</a></li>
+            </ul>
+          </nav>
+        </div>
+        <picture>
+          <img src="../img/nescafe-logo.png" alt="Logo Nescafé">
+        </picture>
+      </header>
     <main>
       <section id="Contacto">
-        <!--<div class="contact-form">
-          <form action="/Proyecto-Web-CoderHouse/scripts/enviar-contacto.php" method="POST">
-            <label for="nombre y apellido">Nombre y Apellido:</label>
-            <input type="text" placeholder="Ingrese su nombre y apellido" id="nombre y apellido" name="nombre y apellido" required>
-            <label for="correo electronico">Correo Electrónico:</label>
-            <input type="email" placeholder="Ingrese su correo electrónico" id="correo electronico" name="correo electronico" required>
-            <label for="Mensaje">Mensaje:</label>
-            <textarea id="Mensaje" name="Mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-          </form>
-        </div>-->
         <form class="contact-form" action="../scripts/enviar-contacto.php" method="POST">
           <label for="nombre-apellido">Nombre y Apellido:</label>
           <input type="text" placeholder="Ingrese su nombre y apellido" id="nombre-apellido" name="nombre-apellido" required>
