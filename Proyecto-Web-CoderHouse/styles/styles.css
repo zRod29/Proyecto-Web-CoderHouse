@@ -23,6 +23,7 @@
 body {
     font-family: 'Lato', sans-serif;
     background: var(--color-primary);
+    
 }
 .tituloprincipal {
     font-family: 'Montserrat', sans-serif;
@@ -50,7 +51,7 @@ body {
     font-weight: 700;
     padding: 10px 20px 15px 25px;
 }
-#bienvenido {
+.bienvenido {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -83,23 +84,37 @@ p {
 .cambio-a-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 1fr;
     gap: 20px;
-    padding: 20px;
     grid-template-areas:
         "header"
         "main"
         "footer";
 }
+header { grid-area: header; }
+main   { grid-area: main; }
+footer { grid-area: footer; }
 
 @media (min-width: 600px) {
     .cambio-a-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "header"
+            "main"
+            "foote ";
     }
 }
-@media (min-width: 1040px) {
+@media (min-width: 1024px) {
     .cambio-a-grid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer";
+            main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
     }
 }
 
@@ -114,7 +129,7 @@ header {
 }
 
 .header-izquierda {
-    display: vertical;
+    display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 15px 20px;
@@ -189,7 +204,7 @@ footer img {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 400px;
+    max-width: auto;
 }
 .contact-form label {
     display: flex;
@@ -199,33 +214,34 @@ footer img {
 }
 label{
     display: inline-block;
-    padding: 12px 20px;
+    padding: 0.75rem 1.25rem;
     font-size: 2rem;
     border-radius: 8px;
 }
 input {
-    width: 400px;
-    height: 45px;
-    font-size: 1.8rem;
+    width: 25rem;
+    height: 3rem;
+    font-size: 1.2rem;
     border-radius: 8px;
     border: 1px solid;
 }
 textarea {
-    width: 400px;
-    height: 100px;
+    width: 25rem;
+    height: 8rem;
     font-size: 1.8rem;
     border-radius: 8px;
     cursor: text;
     color: var(--color-text);
 }
 button {
-    width: 150px;
-    height: 45px;
+    width: 9rem;
+    padding: 0.8rem 2rem;
     font-size: 1.8rem;
     border-radius: 8px;
+    cursor: pointer;
 }
 button:hover {
     background: var(--color-secondary);
     color: var(--color-text);
-    border: none;
+    border-radius: 8px;
 }

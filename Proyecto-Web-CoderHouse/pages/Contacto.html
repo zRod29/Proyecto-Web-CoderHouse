@@ -13,10 +13,11 @@
         <h1 class="tituloprincipal">Ezequiel Rodriguez</h1>
           <nav>
             <ul>
+              <li><a href="/index.html">Home</a></li>
               <li><a href="/Proyecto-Web-CoderHouse/pages/Inicio.html">Inicio</a></li>
               <li><a href="/Proyecto-Web-CoderHouse/pages/Sobre-mi.html">Sobre mí</a></li>
               <li><a href="/Proyecto-Web-CoderHouse/pages/Proyectos.html">Proyectos</a></li>
-              <li><a href="/index.html">Home</a></li>
+              <li><a href="/Proyecto-Web-CoderHouse/pages/Contacto.html">Contacto</a></li>
             </ul>
           </nav>
         </div>
@@ -27,12 +28,12 @@
     <main>
       <section id="Contacto">
         <form class="contact-form" action="../scripts/enviar-contacto.php" method="POST">
-          <label for="nombre-apellido">Nombre y Apellido:</label>
+          <label for="nombre-apellido">Nombre y Apellido</label>
           <input type="text" placeholder="Ingrese su nombre y apellido" id="nombre-apellido" name="nombre-apellido" required>
-          <label for="correo">Correo Electrónico:</label>
+          <label for="correo">Correo Electrónico</label>
           <input type="email" placeholder="Ingrese su correo electrónico" id="correo" name="correo" required>
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" required></textarea>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Ingrese su mensaje" required></textarea>
           <button type="submit">Enviar</button>
         </form>
       </section>
