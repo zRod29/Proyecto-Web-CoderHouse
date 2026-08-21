@@ -1,0 +1,15 @@
+//hacer mixins o extend (ver cual para los botones, seguramente sea un extend) para los botones
+
+button {
+  width: 9rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--color-secondary);
+  color: var(--color-text);
+  border-radius: 8px;
+}

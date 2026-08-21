@@ -1,0 +1,27 @@
+//usar variables para la letra
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: auto;
+  gap: 10px;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer-logos {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.fa-brands {
+  font-size: 40px;
+  color: var(--color-text);
+}
