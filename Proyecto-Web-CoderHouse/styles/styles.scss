@@ -1,18 +1,253 @@
-/* Error: @use rules must be written before any other rules.
- *   ,
- * 7 | @use "../utilites/variables";
- *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\base\_tipografia.scss 7:1  @use
- *   scss\main.scss 5:1              root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: @use rules must be written before any other rules.\a   \2577 \a 7 \2502  @use "../utilites/variables";\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\base\\_tipografia.scss 7:1  @use\a   scss\\main.scss 5:1              root stylesheet';
+/* font-family: "Montserrat", sans-serif; */
+/* font-family: "Lato", sans-serif; */
+/* Global Styles */
+/* Colors: Narvik (#EAE7DD), Sorrell brown (#99775C)*/
+.tituloprincipal, .subtitulo, .subtituloh3, .subtituloh4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #111;
 }
+
+body, p {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #D1BB91 !important;
+}
+
+.bienvenido {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 10px 20px 15px 5px;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  max-width: 600px;
+  padding: 10px 20px 15px 5px;
+  margin-left: 20px;
+}
+
+.fototraje {
+  display: flex;
+  margin-top: 20px;
+  padding: 10px 20px 15px 25px;
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
+@media (min-width: 600px) {
+  .cambio-a-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "header" "main" "foote ";
+  }
+}
+@media (min-width: 1024px) {
+  .cambio-a-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "header header" "main main" "footer footer";
+  }
+  .cambio-a-grid main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+.tituloprincipal {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-left: 20px;
+  margin: 0px;
+  display: flex;
+}
+
+.subtitulo {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 10px 20px 15px 25px;
+}
+
+.subtituloh3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 10px 20px 15px 25px;
+}
+
+.subtituloh4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 10px 20px 15px 25px;
+}
+
+button {
+  width: 9rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #99775C;
+  color: #111;
+  border-radius: 8px;
+}
+
+/* Formulario */
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  max-width: auto;
+}
+
+.contact-form label {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: left;
+  font-weight: 700;
+}
+
+label {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  font-size: 2rem;
+  border-radius: 8px;
+}
+
+input {
+  width: 25rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid;
+}
+
+textarea {
+  width: 25rem;
+  height: 8rem;
+  font-size: 1.8rem;
+  border-radius: 8px;
+  cursor: text;
+  color: #111;
+}
+
+button {
+  width: 9rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #99775C;
+  color: #111;
+  border-radius: 8px;
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  border-bottom: 5px solid #99775C;
+}
+
+.header-izquierda {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 20px;
+}
+
+header img {
+  width: 250px;
+  height: auto;
+}
+
+.header-logo {
+  display: flex;
+  align-items: right;
+  padding: 10px 20px 15px 5px;
+}
+
+nav a {
+  display: inline-block;
+  flex-direction: column;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #111;
+  text-decoration: none;
+  width: fit-content;
+}
+
+nav a:hover {
+  background: #99775C;
+  color: #111;
+  display: flex;
+  border: 2px solid #000000;
+  border-radius: 8px;
+}
+
+nav ul {
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+.navbar-brand img {
+  width: 11rem;
+  height: 3rem;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: auto;
+  gap: 10px;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer-logos {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.fa-brands {
+  font-size: 40px;
+  color: #111;
+}
+
+/*# sourceMappingURL=styles.scss.map */
