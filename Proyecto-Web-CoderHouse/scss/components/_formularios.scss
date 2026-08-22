@@ -1,14 +1,17 @@
 /* Formulario */
+
+@use "../utilites/variables";
+
 .contact-form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 15px;
   max-width: auto;
 }
 
 .contact-form label {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   text-align: left;
   font-weight: 700;
 }
@@ -34,7 +37,7 @@ textarea {
   font-size: 1.8rem;
   border-radius: 8px;
   cursor: text;
-  color: var(--color-text);
+  color: $color-text;
 }
 
 button {
@@ -46,7 +49,7 @@ button {
 }
 
 button:hover {
-  background: var(--color-secondary);
-  color: var(--color-text);
+  background: $color-background-secundario;
+  color: $color-text;
   border-radius: 8px;
 }

@@ -1,5 +1,7 @@
 //hacer mixins o extend (ver cual para los botones, seguramente sea un extend) para los botones
 
+@use "../utilites/variables";
+
 button {
   width: 9rem;
   padding: 0.8rem 2rem;
@@ -9,7 +11,7 @@ button {
 }
 
 button:hover {
-  background: var(--color-secondary);
-  color: var(--color-text);
+  background: $color-background-secundario;
+  color: $color-text;
   border-radius: 8px;
 }

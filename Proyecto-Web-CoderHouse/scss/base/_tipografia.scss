@@ -2,3 +2,36 @@
 
 //poner toda la tipografia del css y ponerlo en este archivo, hacer varias variables o mixins para titulos, parrafos y botones y luego llamarlas en los demas archivos scss, para que sea mas facil de mantener y cambiar la tipografia en un solo lugar.
 // font-family-titulos: "Montserrat", sans-serif;  font-family-todo-lo-demas", sans-serif; 
+
+
+@use "../utilites/variables";
+
+.tituloprincipal{
+  @extend %titulo;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-left: 20px;
+  margin: 0px;
+  display: flex;
+}
+
+.subtitulo{
+  @extend %titulo;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 10px 20px 15px 25px;
+}
+
+.subtituloh3{
+  @extend %titulo;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 10px 20px 15px 25px;
+}
+.subtituloh4{
+  @extend %titulo;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 10px 20px 15px 25px;
+}
+

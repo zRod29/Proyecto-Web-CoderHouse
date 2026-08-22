@@ -4,11 +4,20 @@
 /* Global Styles */
 /* Colors: Narvik (#EAE7DD), Sorrell brown (#99775C)*/
 
+$color-background: #D1BB91;
+$color-background-secundario: #99775C;
+$color-text: #111;
 
-:root {
-    --color-primary: #D1BB91;
-    --color-secondary: #99775C;
-    --color-text: #111;
+%titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+	color: $color-text;
+	font-family: 'Montserrat', sans-serif;
+}
+
+%parrafo {
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
 }
 
 
@@ -22,8 +31,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    background: var(--color-primary) !important;
-    
+    background: var(--color-primary) !important;    
 }
 .tituloprincipal {
     font-family: 'Montserrat', sans-serif;

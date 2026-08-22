@@ -1,12 +1,14 @@
 //usar variables para la letra y la de los colores
 
+@use "../utilites/variables";
+
 header {
   grid-area: header;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
-  border-bottom: 5px solid var(--color-secondary);
+  border-bottom: 5px solid $color-background-secundario;
 }
 
 .header-izquierda {

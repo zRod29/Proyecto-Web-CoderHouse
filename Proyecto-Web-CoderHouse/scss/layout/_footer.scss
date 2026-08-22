@@ -1,5 +1,7 @@
 //usar variables para la letra
 
+@use "../utilites/variables";
+
 footer {
   grid-area: footer;
   display: flex;
@@ -23,5 +25,5 @@ footer img {
 
 .fa-brands {
   font-size: 40px;
-  color: var(--color-text);
+  color: $color-text;
 }

@@ -1,39 +1,18 @@
 //pcambiar en variables los colores y poner $background-color: #D1BB91; y $text-color: #111; y $background de botones, cards etc: #99775C
 
+@use "../utilites/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
   font-family: 'Lato', sans-serif;
-  background: var(--color-primary) !important;
+  background: $color-background !important;
 }
 
-.tituloprincipal {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-  padding-left: 20px;
-  margin: 0px;
-  display: flex;
-}
-
-.subtitulo {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  padding: 10px 20px 15px 25px;
-}
-
-.subtituloh3 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  padding: 10px 20px 15px 25px;
-}
-
-.subtituloh4 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 700;
-  padding: 10px 20px 15px 25px;
-}
 
 .bienvenido {
   display: flex;
@@ -41,7 +20,7 @@ body {
   gap: 20px;
   align-items: center;
   text-align: center;
-  margin-top: 1fr;
+  margin-top: 2rem;
 }
 
 section {
@@ -50,7 +29,7 @@ section {
 }
 
 p {
-  font-family: 'Lato', sans-serif;
+  @extend %parrafo;
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 1.6;
