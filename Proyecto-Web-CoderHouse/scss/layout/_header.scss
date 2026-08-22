@@ -8,7 +8,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
-  border-bottom: 5px solid $color-background-secundario;
+  border-bottom: 5px solid variables.$color-background-secundario;
 }
 
 .header-izquierda {

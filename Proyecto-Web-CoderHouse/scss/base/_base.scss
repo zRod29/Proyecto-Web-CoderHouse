@@ -9,8 +9,8 @@
 
 
 body {
-  font-family: 'Lato', sans-serif;
-  background: $color-background !important;
+  @extend %parrafo;
+  background: variables.$color-background !important;
 }
 
 

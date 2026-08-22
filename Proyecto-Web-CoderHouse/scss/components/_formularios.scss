@@ -37,7 +37,7 @@ textarea {
   font-size: 1.8rem;
   border-radius: 8px;
   cursor: text;
-  color: $color-text;
+  color: variables.$color-text;
 }
 
 button {
@@ -49,7 +49,7 @@ button {
 }
 
 button:hover {
-  background: $color-background-secundario;
-  color: $color-text;
+  background: variables.$color-background-secundario;
+  color: variables.$color-text;
   border-radius: 8px;
 }

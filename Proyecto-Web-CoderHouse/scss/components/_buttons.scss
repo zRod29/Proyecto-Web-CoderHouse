@@ -11,7 +11,7 @@ button {
 }
 
 button:hover {
-  background: $color-background-secundario;
-  color: $color-text;
+  background: variables.$color-background-secundario;
+  color: variables.$color-text;
   border-radius: 8px;
 }

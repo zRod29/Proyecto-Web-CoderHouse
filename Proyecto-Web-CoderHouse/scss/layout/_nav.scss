@@ -12,8 +12,8 @@ nav a {
   width: fit-content;
 }
 nav a:hover {
-  background: $color-background-secundario;
-  color: #000000;
+  background: variables.$color-background-secundario;
+  color: variables.$color-text;
   display: flex;
   border: 2px solid #000000;
   border-radius: 8px;
