@@ -1,10 +1,10 @@
-/* Error: Undefined variable.
- *    ,
- * 13 |   background: $color-background !important;
- *    |               ^^^^^^^^^^^^^^^^^
- *    '
- *   scss\base\_base.scss 13:15  @use
- *   scss\main.scss 4:1          root stylesheet */
+/* Error: @use rules must be written before any other rules.
+ *   ,
+ * 7 | @use "../utilites/variables";
+ *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   scss\base\_tipografia.scss 7:1  @use
+ *   scss\main.scss 5:1              root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 13 \2502    background: $color-background !important;\d\a    \2502                ^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\base\\_base.scss 13:15  @use\a   scss\\main.scss 4:1          root stylesheet";
+  content: 'Error: @use rules must be written before any other rules.\a   \2577 \a 7 \2502  @use "../utilites/variables";\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\base\\_tipografia.scss 7:1  @use\a   scss\\main.scss 5:1              root stylesheet';
 }
