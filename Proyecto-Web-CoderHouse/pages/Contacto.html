@@ -3,45 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contactá a Ezequiel Rodriguez, desarrollador web. Enviá un mensaje con tu consulta o propuesta de proyecto.">
+    <meta name="keywords" content="contacto, desarrollador web, Ezequiel Rodriguez, formulario de contacto, consultas web">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" >
-    <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Contacto - Ezequiel Rodriguez</title>
   </head>
   <body class="cambio-a-grid">
-      <header>
-      <nav class="navbar navbar-expand-lg bg-transparent">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-transparent" aria-label="Navegación principal">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html"> 
-            <img src="/Proyecto-Web-CoderHouse/img/nescafe-logo.png" alt="Logo Nescafé"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+          <a class="navbar-brand" href="/index.html">
+            <img src="/Proyecto-Web-CoderHouse/img/nescafe-logo.png" alt="Logo Nescafé - Ir al inicio">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/Proyecto-Web-CoderHouse/pages/Inicio.html">Inicio</a>
+                <a class="nav-link" href="/Proyecto-Web-CoderHouse/pages/Inicio.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/Proyecto-Web-CoderHouse/pages/Sobre-mi.html">Sobre Mi</a>
+                <a class="nav-link" href="/Proyecto-Web-CoderHouse/pages/Sobre-mi.html">Sobre Mí</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/Proyecto-Web-CoderHouse/pages/Proyectos.html">Proyectos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/Proyecto-Web-CoderHouse/pages/Contacto.html">Contacto</a>
+                <a class="nav-link active" aria-current="page" href="/Proyecto-Web-CoderHouse/pages/Contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
         </div>
-      </nav>        
+      </nav>
     </header>
     <main>
-      <section id="Contacto">
+      <section id="contacto" aria-label="Formulario de contacto">
+        <h1 class="subtitulo">Contactá a Ezequiel Rodriguez</h1>
         <form class="contact-form" action="../scripts/enviar-contacto.php" method="POST">
           <label for="nombre-apellido">Nombre y Apellido</label>
           <input type="text" placeholder="Ingrese su nombre y apellido" id="nombre-apellido" name="nombre-apellido" required>
@@ -49,26 +53,26 @@
           <input type="email" placeholder="Ingrese su correo electrónico" id="correo" name="correo" required>
           <label for="mensaje">Mensaje</label>
           <textarea id="mensaje" name="mensaje" placeholder="Ingrese su mensaje" required></textarea>
-          <button type="submit">Enviar</button>
+          <button type="submit">Enviar mensaje</button>
         </form>
       </section>
     </main>
     <footer>
       <div class="footer-logos">
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Visitar Instagram">
           <i class="fa-brands fa-instagram"></i>
         </a>
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Visitar Facebook">
           <i class="fa-brands fa-facebook"></i>
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Visitar Twitter">
           <i class="fa-brands fa-twitter"></i>
         </a>
-        <a href="https://api.whatsapp.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://api.whatsapp.com" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
           <i class="fa-brands fa-whatsapp"></i>
         </a>
       </div>
-        <p>&copy; 202X - Todos los derechos reservados.</p>
+      <p>&copy; 2025 Ezequiel Rodriguez - Todos los derechos reservados.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
