@@ -1,0 +1,9 @@
+@use "../utilites/variables";
+
+.color-cards {
+	background-color: variables.$color-cards !important;
+  color: variables.$color-text;
+	max-width: 540px;
+	border: 3px solid variables.$color-border;
+	border-radius: 5px;
+}

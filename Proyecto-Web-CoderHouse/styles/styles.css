@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* font-family: "Montserrat", sans-serif; */
 /* font-family: "Lato", sans-serif; */
 /* Global Styles */
@@ -21,11 +22,13 @@ body, p {
 
 #1E293B Texto principal
 
-#64748B Texto secundario
-
 #3B82F6 Botones principales, enlaces, detalles
 
 #475569 Botones secundarios
+
+#94A3B8 Bordes, líneas
+
+#64748B Tarjetas
 
 */
 * {
@@ -60,14 +63,6 @@ p {
   margin-left: 20px;
 }
 
-.fototraje {
-  display: flex;
-  margin-top: 20px;
-  padding: 10px 20px 15px 25px;
-  margin-left: 20px;
-  margin-right: 15px;
-}
-
 @media (min-width: 600px) {
   .cambio-a-grid {
     grid-template-columns: repeat(1, 1fr);
@@ -76,13 +71,47 @@ p {
 }
 @media (min-width: 1024px) {
   .cambio-a-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "header header" "main main" "footer footer";
   }
   .cambio-a-grid main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+}
+@media (min-width: 600px) {
+  .cotizacion {
+    width: 80%;
+    padding: 30px;
+  }
+  .cotizacion h2 {
+    font-size: 2.3rem;
+  }
+  .cotizacion p {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .cotizacion {
+    width: 70%;
+    padding: 40px;
+  }
+  .cotizacion h2 {
+    font-size: 2.5rem;
+  }
+  .cotizacion form {
+    gap: 10px;
+  }
+  .cotizacion input,
+  .cotizacion select,
+  .cotizacion textarea {
+    font-size: 1.05rem;
+  }
+  .cotizacion .boton-whatsapp {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .tituloprincipal {
@@ -123,6 +152,14 @@ button:hover {
   background: #475569;
   color: #1E293B;
   border-radius: 8px;
+}
+
+.color-cards {
+  background-color: #64748B !important;
+  color: #1E293B;
+  max-width: 540px;
+  border: 3px solid #94A3B8;
+  border-radius: 5px;
 }
 
 /* Formulario */
@@ -176,6 +213,69 @@ button:hover {
   background: #475569;
   color: #1E293B;
   border-radius: 8px;
+}
+
+.cotizacion {
+  width: 90%;
+  max-width: 700px;
+  margin: 15px auto;
+  padding: 10px 20px;
+  background-color: #475569;
+  border-radius: 12px;
+}
+.cotizacion h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.cotizacion p {
+  text-align: center;
+  margin: 0 auto 25px;
+  font-size: 1rem;
+}
+.cotizacion form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.cotizacion label {
+  font-weight: 700;
+  margin-top: 5px;
+}
+.cotizacion input,
+.cotizacion select,
+.cotizacion textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px solid #94A3B8;
+  border-radius: 8px;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  background-color: white;
+}
+.cotizacion textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.boton-whatsapp {
+  display: block;
+  margin-top: 20px;
+  padding: 14px 20px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #25D366;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.boton-whatsapp:hover {
+  background-color: #1ebe5d;
 }
 
 header {
