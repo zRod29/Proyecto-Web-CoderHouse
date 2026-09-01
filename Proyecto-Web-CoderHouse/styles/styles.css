@@ -5,7 +5,7 @@
 .tituloprincipal, .subtitulo, .subtituloh3, .subtituloh4 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: #111;
+  color: #1E293B;
 }
 
 body, p {
@@ -13,13 +13,28 @@ body, p {
   font-weight: 500;
 }
 
+/* 
+
+#B8C4D1 Fondo principal
+
+#334155 Headers, navbar
+
+#1E293B Texto principal
+
+#64748B Texto secundario
+
+#3B82F6 Botones principales, enlaces, detalles
+
+#475569 Botones secundarios
+
+*/
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background: #D1BB91 !important;
+  background: #B8C4D1 !important;
 }
 
 .bienvenido {
@@ -105,8 +120,8 @@ button {
 }
 
 button:hover {
-  background: #99775C;
-  color: #111;
+  background: #475569;
+  color: #1E293B;
   border-radius: 8px;
 }
 
@@ -146,7 +161,7 @@ textarea {
   font-size: 1.8rem;
   border-radius: 8px;
   cursor: text;
-  color: #111;
+  color: #1E293B;
 }
 
 button {
@@ -158,8 +173,8 @@ button {
 }
 
 button:hover {
-  background: #99775C;
-  color: #111;
+  background: #475569;
+  color: #1E293B;
   border-radius: 8px;
 }
 
@@ -169,7 +184,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
-  border-bottom: 5px solid #99775C;
+  border-bottom: 5px solid #475569;
 }
 
 .header-izquierda {
@@ -209,14 +224,14 @@ nav a {
   flex-direction: column;
   padding: 8px 12px;
   border-radius: 8px;
-  color: #111;
+  color: #1E293B;
   text-decoration: none;
   width: fit-content;
 }
 
 nav a:hover {
-  background: linear-gradient(to right, #99775C, #D1BB91);
-  color: #111;
+  background: linear-gradient(to right, #475569, #B8C4D1);
+  color: #1E293B;
   display: flex;
   border: 2px solid #000000;
   border-radius: 8px;
@@ -261,7 +276,7 @@ footer img {
 
 .fa-brands {
   font-size: 40px;
-  color: #111;
+  color: #1E293B;
 }
 
 /*# sourceMappingURL=styles.css.map */

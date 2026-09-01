@@ -4,13 +4,13 @@
 /* Global Styles */
 /* Colors: Narvik (#EAE7DD), Sorrell brown (#99775C)*/
 
-$color-background: #D1BB91;
-$color-background-secundario: #99775C;
-$color-text: #111;
+$color-background: #B8C4D1;
+$color-background-secundario: #475569;
+$color-text: #1E293B;
 
 %titulo {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+	font-weight: 700;
 	color: $color-text;
 }
 
@@ -19,4 +19,19 @@ $color-text: #111;
 	font-weight: 500;
 }
 
+/* 
+
+#B8C4D1 Fondo principal
+
+#334155 Headers, navbar
+
+#1E293B Texto principal
+
+#64748B Texto secundario
+
+#3B82F6 Botones principales, enlaces, detalles
+
+#475569 Botones secundarios
+
+*/
 
