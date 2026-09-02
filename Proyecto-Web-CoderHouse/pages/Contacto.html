@@ -14,7 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Contacto - Ezequiel Rodriguez</title>
   </head>
-  <body class="cambio-a-grid">
+  <body>
     <header>
       <nav class="navbar navbar-expand-lg bg-transparent" aria-label="Navegación principal">
         <div class="container-fluid">
@@ -41,9 +41,9 @@
         </div>
       </nav>
     </header>
-    <main>
-      <section id="contacto" aria-label="Formulario de contacto">
-        <h1 class="subtitulo">Contactá a Ezequiel Rodriguez</h1>
+    <main class="cambio-a-grid">
+      <section class="cotizacion" aria-label="Formulario de contacto">
+        <h1 class="subtitulo">Contacta a la Herreria</h1>
         <form class="contact-form" action="../scripts/enviar-contacto.php" method="POST">
           <label for="nombre-apellido">Nombre y Apellido</label>
           <input type="text" placeholder="Ingrese su nombre y apellido" id="nombre-apellido" name="nombre-apellido" required>
@@ -51,7 +51,7 @@
           <input type="email" placeholder="Ingrese su correo electrónico" id="correo" name="correo" required>
           <label for="mensaje">Mensaje</label>
           <textarea id="mensaje" name="mensaje" placeholder="Ingrese su mensaje" required></textarea>
-          <button type="submit">Enviar mensaje</button>
+          <button class="button-contacto" type="submit">Enviar mensaje</button>
         </form>
       </section>
     </main>

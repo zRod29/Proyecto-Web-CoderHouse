@@ -2,8 +2,40 @@
 
 .color-cards {
 	background-color: variables.$color-cards !important;
-  color: variables.$color-text;
+    color: variables.$color-text;
 	max-width: 540px;
 	border: 3px solid variables.$color-border;
 	border-radius: 5px;
+}
+.servicios{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    .subtitulo {
+        text-align: center;
+    }
+}
+
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    align-items: stretch;
+    @media (min-width: 640px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: 900px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+    }
 }
