@@ -272,6 +272,9 @@ button:hover {
   width: 90%;
   max-width: 700px;
   margin: auto;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 10px 20px;
   background-color: #475569;
   border-radius: 12px;

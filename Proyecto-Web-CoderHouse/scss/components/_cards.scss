@@ -1,5 +1,6 @@
 @use '../utilites/mixins';
 @use "../utilites/variables";
+@use '../utilites/extend';
 
 .color-cards {
 	background-color: variables.$color-cards !important;

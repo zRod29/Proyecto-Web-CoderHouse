@@ -1,4 +1,4 @@
-
+@use "../utilites/variables";
 
 %boton-base {
     display: block;
@@ -11,4 +11,15 @@
     transition: 0.3s;
     border: none;
     cursor: pointer;
+}
+
+%titulo {
+  font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	color: variables.$color-text;
+}
+
+%parrafo {
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
 }
