@@ -1,0 +1,15 @@
+
+
+@mixin grid-responsive($cols-mobile: 1, $cols-tablet: 2, $cols-desktop: 3, $gap: 20px) {
+    display: grid;
+    grid-template-columns: repeat($cols-mobile, 1fr);
+    gap: $gap;
+
+    @media (min-width: 640px) {
+        grid-template-columns: repeat($cols-tablet, 1fr);
+    }
+
+    @media (min-width: 900px) {
+        grid-template-columns: repeat($cols-desktop, 1fr);
+    }
+}
