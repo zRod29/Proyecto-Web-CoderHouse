@@ -21,6 +21,7 @@
 .grid-servicios {
     @include mixins.grid-responsive($cols-mobile: 1, $cols-tablet: 2, $cols-desktop: 3);
     align-items: stretch;
+    justify-items: center;
     .card {
         display: flex;
         flex-direction: column;
@@ -32,4 +33,11 @@
         object-fit: cover;
         border-radius: 8px 8px 0 0;
     }
+}
+
+.card-img-top {
+    width: 18rem !important;
+    height: auto !important;
+    object-fit: contain;
+    border-radius: 8px 8px 0 0;
 }
