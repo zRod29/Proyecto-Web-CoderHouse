@@ -100,6 +100,44 @@ p {
     margin-right: auto;
   }
 }
+.valores {
+  padding: 40px 20px;
+  text-align: center;
+}
+.valores h2 {
+  margin-bottom: 30px;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+}
+.valores .valores-contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.valores .valor {
+  padding: 20px;
+  border: 2px solid #94A3B8;
+  border-radius: 10px;
+}
+.valores .valor h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+.valores .valor p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .valores .valores-contenedor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .valores .valores-contenedor {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 .tituloprincipal {
   font-size: 2.5rem;
   font-weight: 700;
