@@ -1,23 +1,24 @@
-# Proyecto Web - Nescafé | CoderHouse
+# Arterro - Taller de Herrería
 
-Sitio web personal desarrollado como proyecto del curso de **Desarrollo Web** en CoderHouse.
+Sitio web desarrollado como proyecto final del curso de **Desarrollo Web** en CoderHouse.
 
-## 🔗 Link al sitio desplegado
+## 🔗 Links
 
-[Ver sitio en GitHub Pages](https://zRod29.github.io/Proyecto-Web-CoderHouse)
+- 🌐 [Ver sitio desplegado](https://proyecto-web-coder-house.vercel.app/index.html)
+- 📁 [Repositorio en GitHub](https://github.com/zRod29/Proyecto-Web-CoderHouse)
 
 ## 📄 Descripción
 
-Página web dedicada a **Nescafé**, creada como parte del aprendizaje en desarrollo web. El sitio incluye información personal del desarrollador, proyectos realizados y un formulario de contacto.
+Sitio web para **Arterro**, taller de herrería con 23 años de experiencia en la fabricación de portones, rejas, pérgolas, escaleras y muebles de diseño industrial. El sitio permite conocer los servicios, solicitar presupuestos y contactar al taller.
 
 ## 📁 Estructura del proyecto
 
 Proyecto-Web-CoderHouse/
 ├── index.html
 ├── pages/
-│ ├── Inicio.html
-│ ├── Sobre-mi.html
-│ ├── Proyectos.html
+│ ├── Nosotros.html
+│ ├── Presupuestos.html
+│ ├── Servicios.html
 │ └── Contacto.html
 ├── styles/
 │ └── styles.css
@@ -27,6 +28,8 @@ Proyecto-Web-CoderHouse/
 │ ├── components/
 │ ├── layout/
 │ └── utilites/
+└── assets/
+├── Logo/
 └── img/
 
 ## 🛠️ Tecnologías utilizadas
@@ -40,14 +43,22 @@ Proyecto-Web-CoderHouse/
 
 ## ✨ Características
 
-- Diseño responsivo (mobile-first)
+- Diseño responsivo mobile-first
 - Navbar con menú hamburguesa
-- Carrusel de imágenes
-- Formulario de contacto
+- Cards de servicios con Bootstrap
+- Formulario de presupuesto con botón de WhatsApp
 - Animaciones con Animate.css
-- Variables CSS y mixins con SCSS
+- Variables, mixins y partials con SCSS
+- SEO optimizado con meta description y keywords
 
 ## 👨‍💻 Desarrollador
 
-**Ezequiel Rodriguez**  
+**Ezequiel Rodriguez**
 Estudiante de Desarrollo Web en CoderHouse
+
+## 🏭 Cliente
+
+**Arterro** - Taller de Herrería
+- Instagram: [@arterro_](https://www.instagram.com/arterro_/)
+- Facebook: [arterrometal](https://www.facebook.com/arterrometal)
+- WhatsApp: [3772564776](https://wa.me/3772564776)
