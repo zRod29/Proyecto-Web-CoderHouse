@@ -49,7 +49,7 @@
       </section>
       <section class="cotizacion">
         <h4> Completá los datos de tu proyecto para que podamos conocer qué trabajo necesitás.</h4>
-            <form>
+            <form id="formularioProyecto">
                 <label for="nombre">Nombre y apellido</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
                 <label for="telefono">Teléfono</label>
@@ -68,10 +68,9 @@
                 <input type="text" id="medidas" name="medidas" placeholder="Ej: 2 m de ancho x 1,5 m de alto">
                 <label for="descripcion">Descripción del proyecto</label>
                 <textarea id="descripcion" name="descripcion" rows="6" placeholder="Contanos qué trabajo necesitás realizar"></textarea>
-                <a class="boton-whatsapp" href="https://wa.me/3772564776?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20un%20trabajo%20de%20herrer%C3%ADa."
-                    target="_blank">
-                    📱 Solicitar cotización por WhatsApp
-                </a>
+                <button type="submit" class="boton-whatsapp">
+                  📱 Solicitar cotización por WhatsApp
+                </button>
             </form>
         </section>
     </main>
