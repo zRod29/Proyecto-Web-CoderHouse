@@ -13,18 +13,61 @@ ND (&&) - "Todo debe ser verdad"
 NOT (!) - "El gran inversor"
 */                 
 
-const formContacto = document.getElementById('formularioProyecto2');
+const formulario = document.getElementById("formularioProyecto2");
 
+formulario.addEventListener("submit", function (event) {
+    event.preventDefault();
 
+    let continuar = true;
 
+    while (continuar) {
 
+        let servicio = document.getElementById("servicio2").value;
+        let ancho = parseFloat(document.getElementById("ancho").value);
+        let alto = parseFloat(document.getElementById("alto").value);
 
+        if (servicio === "") {
+            alert("Por favor, seleccioná un tipo de trabajo.");
+            continuar = false;
 
+        } else if (isNaN(ancho) || isNaN(alto)) {
+            alert("Por favor, ingresá medidas válidas.");
+            continuar = false;
 
+        } else {
 
+            let metrosCuadrados = ancho * alto;
+            let precioPorMetro = 0;
 
+            if (servicio === "rejas") {
+                precioPorMetro = 50000;
 
+            } else if (servicio === "portones") {
+                precioPorMetro = 80000;
 
+            } else if (servicio === "barandas") {
+                precioPorMetro = 60000;
+
+            } else if (servicio === "escaleras") {
+                precioPorMetro = 90000;
+
+            } else if (servicio === "estructuras") {
+                precioPorMetro = 70000;
+            }
+
+            let presupuesto = metrosCuadrados * precioPorMetro;
+
+            alert(
+                "Presupuesto estimado\n\n" +
+                "Trabajo: " + servicio + "\n" +
+                "Superficie: " + metrosCuadrados + " m²\n" +
+                "Precio estimado: $" + presupuesto
+            );
+
+            continuar = false;
+        }
+    }
+});
 
 const formProyecto = document.getElementById('formularioProyecto');
 
