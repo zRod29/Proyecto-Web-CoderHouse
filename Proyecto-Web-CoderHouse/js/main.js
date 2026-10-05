@@ -1,20 +1,30 @@
+/*
+if = si
+else if = PERO SI NO
+else = de lo contrario
 
-let nombre = prompt("Ingrese su nombre");
-const edad = parseInt(prompt("Ingrese su edad"));
-let curso = prompt("Ingrese el curso que esta haciendo");
+=== Igualdad estricta
+!== Desigualdad estricta:
+4>1  Mayor que
+1<2 = menor que
+>= y <= Mayor/menor o igual
+OR (||) - "Al menos uno debe servir"
+ND (&&) - "Todo debe ser verdad"
+NOT (!) - "El gran inversor"
+*/                 
 
-console.log("Hola, me llamo " + nombre + " y tengo " + edad + " años.");
-console.log("Curso: " + curso);
+const formContacto = document.getElementById('formularioProyecto2');
 
-let numeroA = parseInt(prompt("Ingrese un número"));
-let numeroB = parseInt(prompt("Ingrese un número"));
 
-console.log("Resultado de Operación Aritmica: " + (numeroA * numeroB));
 
-alert("El resultado de la multiplicación es: " + (numeroA * numeroB));
 
-console.log("La suma es: " + (numeroA + 10));
-console.log("La resta es: " + (numeroB - 5));
+
+
+
+
+
+
+
 
 const formProyecto = document.getElementById('formularioProyecto');
 
